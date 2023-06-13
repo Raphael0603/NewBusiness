@@ -1,0 +1,58 @@
+* {
+    background-color: rgb(229, 243, 238);
+}
+
+.cntnt-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.box {
+    width: calc(25% - 3px); /* Adjust the width of the boxes */
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    margin-right: 3px; /* Add space between the boxes */
+}
+
+@keyframes boxAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation-play-state: paused;
+}
+
+.additional-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
+.additional-boxes .box {
+    width: calc(25% - 3px); /* Adjust the width of the boxes */
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    margin-right: 3px; /* Add space between the boxes */
+}
+
+.additional-boxes .box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation-play-state: paused;
+}
